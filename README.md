@@ -1,12 +1,18 @@
 # Project: Dialogue dataset sanitization and merging
 
-This repository contains small scripts and a notebook to convert conversation exports into a combined JSONL dataset suitable for fine-tuning a conversational model.
+This repository contains small scripts and a notebook to convert conversation exports into a combined JSONL dataset suitable for fine-tuning a custom conversational model.
+
+Watch the youtube video ! :
+https://www.youtube.com/watch?v=HIVIlWDrseQ
+
+<img width="640" height="420" alt="Press Start 2P (1)" src="https://github.com/user-attachments/assets/0048f0d7-4aa0-41e5-96b1-89f91e259eb8" />
+
 
 Files in this repo
 
 - `Sanitize_instagram_data.py` — convert an Instagram/Facebook messages JSON export into dialogue pairs (`dialogue_pairs.jsonl`). Edit `MY_NAME` and `HER_NAME` to match the names used in your export.
 - `sanitize_dailyDialogue_data.py` — convert DailyDialog text/topic files into pairwise JSONL (`dailydialog_sanitized.jsonl`).
-- `Merge_datasets.py` — merge `dialogue_pairs.jsonl` (Instagram) and `dailydialog_sanitized.jsonl` into `combined_dataset.jsonl`.
+- `Merge_datasets.py` — merge `dialogue_pairs.jsonl` (Instagram) and `dailydialog_sanitized.jsonl` into `combined_dataset.jsonl`. (used dailydialog dataset to get more cohearency for the high max new tokens (human text messages are short and bland :) )
 - `Joi.ipynb` — Colab notebook showing how to fine-tune with LoRA/PEFT using the combined dataset (4-bit quantization + LoRA). This notebook expects `combined_dataset.jsonl` in the working directory.
 
 Quick overview
