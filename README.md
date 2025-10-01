@@ -125,6 +125,4 @@ If you'd like, I can:
 - add basic unit tests, or
 - run the scripts against a sample export (you'll need to upload or point me to the sample file).
 
----
 
-Generated on: 2025-10-01
