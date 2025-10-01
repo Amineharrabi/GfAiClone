@@ -1,0 +1,9 @@
+# Ignore raw exports and generated large files
+message_*.json
+*.zip
+# Uncomment the next line if you don't want generated jsonl files in git
+# *.jsonl
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.env

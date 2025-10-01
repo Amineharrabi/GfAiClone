@@ -1,0 +1,7 @@
+transformers
+accelerate
+datasets
+peft
+bitsandbytes
+safetensors
+evaluate
